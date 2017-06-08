@@ -14,6 +14,8 @@
 		C22831C91EE95459001D9A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22831C71EE95459001D9A19 /* LaunchScreen.storyboard */; };
 		C22831D41EE95459001D9A19 /* vibInPocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22831D31EE95459001D9A19 /* vibInPocketTests.swift */; };
 		C22831DF1EE95459001D9A19 /* vibInPocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22831DE1EE95459001D9A19 /* vibInPocketUITests.swift */; };
+		C22831EE1EE95465001D9A19 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22831ED1EE95465001D9A19 /* CoreMotion.framework */; };
+		C22831F01EE9548F001D9A19 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22831EF1EE9548F001D9A19 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C22831DA1EE95459001D9A19 /* vibInPocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vibInPocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22831DE1EE95459001D9A19 /* vibInPocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vibInPocketUITests.swift; sourceTree = "<group>"; };
 		C22831E01EE95459001D9A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C22831ED1EE95465001D9A19 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C22831EF1EE9548F001D9A19 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22831F01EE9548F001D9A19 /* AudioToolbox.framework in Frameworks */,
+				C22831EE1EE95465001D9A19 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 				C22831D21EE95459001D9A19 /* vibInPocketTests */,
 				C22831DD1EE95459001D9A19 /* vibInPocketUITests */,
 				C22831BC1EE95459001D9A19 /* Products */,
+				C22831EC1EE95465001D9A19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +130,15 @@
 				C22831E01EE95459001D9A19 /* Info.plist */,
 			);
 			path = vibInPocketUITests;
+			sourceTree = "<group>";
+		};
+		C22831EC1EE95465001D9A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C22831EF1EE9548F001D9A19 /* AudioToolbox.framework */,
+				C22831ED1EE95465001D9A19 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +209,7 @@
 				TargetAttributes = {
 					C22831BA1EE95459001D9A19 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G2T9ZRCKM3;
 						ProvisioningStyle = Automatic;
 					};
 					C22831CE1EE95459001D9A19 = {
@@ -414,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G2T9ZRCKM3;
 				INFOPLIST_FILE = vibInPocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.shma.vibInPocket;
@@ -426,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G2T9ZRCKM3;
 				INFOPLIST_FILE = vibInPocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.shma.vibInPocket;
